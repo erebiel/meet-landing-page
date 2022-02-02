@@ -1,0 +1,318 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #87879D;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    color: #28283D;
+    padding: 0 55px;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    color: #28283D;
+}
+
+p.overline {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #4D96A9;
+}
+
+button {
+    padding: 16px 40px;
+    color: #FAFAFA;
+    border-radius: 29px;
+    border: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 8px;
+}
+
+.btn-primary {
+    background: #4D96A9;
+}
+
+.btn-primary:hover {
+    background: #71C0D4 ;
+}
+
+.btn-secondary {
+    background: #855FB1;
+}
+
+.btn-secondary:hover {
+    background: #B18BDD;
+}
+
+.btn-primary .accent { 
+    color: #8FE3F9;
+}
+
+.btn-secondary .accent {
+    color: #D9B8FF;
+}
+
+.img-logo {
+    padding: 50px 0;
+}
+
+.hero {
+    background: url("assets/desktop/image-hero-left.png"), url("assets/desktop/image-hero-right.png");
+    background-position: left -30px bottom 0px, right -30px bottom 0px;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.content {
+    max-width: 540px;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.content h2 {
+    max-width: 445px;
+    margin: auto;
+}
+
+
+.separator, .separator2 {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    background: #F2F2F2;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 0;
+    position: relative;
+    margin-top: 0;
+}
+
+.separator {
+    margin-bottom: 64px;
+}
+
+.separator2 {
+    z-index: 2;
+    margin-bottom:-29px;
+}
+
+.separator::before, .separator2::before {
+    display: block;
+    content: '';
+    height: 16px;
+}
+
+hr {
+    background: rgba(135, 135, 157, 0.25);
+    border: none;
+    margin-bottom: 0;
+    margin-top: 110px;
+}
+
+hr.sep2 {
+    background: rgba(135, 135, 157, 0.25);
+    border: none;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+
+.thumbnail {
+    padding: 15px;
+    border-radius: 20px;
+    height: 242px;
+}
+
+footer::after {
+    content: "";
+    background: url("assets/desktop/image-footer.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.1;
+}
+
+footer {
+    background-color: #4D96A9;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+
+    height: 308px;
+}
+
+footer h2, footer p{
+    max-width: 350px;
+    text-align: left;
+}
+
+footer h2, footer p {
+    color: #FAFAFA;
+}
+
+footer h2, footer p, footer button {
+    z-index: 1;
+}
+
+.herotable{
+    display: none;
+}
+
+footer p {
+ font-size: 18px;
+}
+
+@media (max-width: 1270px) {
+    .hero{
+        background: none;
+    }
+
+    .herotablet{
+        display: block;
+        background: url("/assets/tablet/image-hero.png");
+        height:303px;
+        background-size: auto;
+        background-position: left -26px top 0;
+        background-repeat: repeat-x;
+    }
+    
+    .thumbnail {
+        padding: 5px;
+        border-radius: 10px;
+        height: 170px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 428px;
+        width: 100vw;
+    }
+    
+    footer h2, footer p{
+        text-align: center;
+        margin: 0;
+    }
+
+    footer p {
+        max-width: 573px;
+    }
+
+    footer h2 {
+        padding-top: 30px;
+    }
+
+    hr {
+        margin-top: 80px;
+    }
+
+    hr.sep2 {
+        margin-top: 51px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    footer::after {
+        background: url("assets/tablet/image-footer.jpg");
+        background-position:center;
+    }
+
+    .thumbnail {
+        height: 156px;
+    }
+
+    .herotablet{
+        background-repeat: no-repeat;
+    }
+
+    .hero .content {
+        max-width: 457px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .gallery .content {
+        max-width: 573px;
+    }
+    
+}
+
+@media (max-width: 385px) {
+    .herotablet {
+        background-position: left -20px top 0;
+        height: 153px;
+        background-size: cover;
+    }
+
+    footer::after {
+        background: url("assets/mobile/image-footer.jpg");
+        background-position:center;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 44px;
+        padding: 0 30px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .gallery .content, .hero .content {
+        max-width: 327px;
+    }
+
+    footer h2, footer p {
+        max-width: 327px;
+    }
+
+    button {
+        margin: 8px 10px;
+    }
+
+
+    hr{
+        margin-top: 64px;
+    }
+
+    hr.sep2 {
+        margin-top: 35px;
+    }
+
+}
