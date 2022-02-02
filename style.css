@@ -195,7 +195,7 @@ footer p {
 
     .herotablet{
         display: block;
-        background: url("/assets/tablet/image-hero.png");
+        background: url("assets/tablet/image-hero.png");
         height:303px;
         background-size: auto;
         background-position: left -26px top 0;
